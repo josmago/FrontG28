@@ -2,7 +2,7 @@
 
 function getCategoria(){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://150.136.121.67:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -22,7 +22,7 @@ function postCategoria(){
             description:$("#description").val()
         };
         $.ajax({
-            url:"http://localhost:8080/api/Category/save",
+            url:"http://150.136.121.67:8080/api/Category/save",
             type:"POST",
             datatype:"JSON",
             contentType:"application/json; charset=utf-8",
@@ -49,7 +49,7 @@ function putCategoria(idBotonActualizar){
         description:$("#description").val()
     };
     $.ajax({
-        url:"http://localhost:8080/api/Category/update",
+        url:"http://150.136.121.67:8080/api/Category/update",
         type:"PUT",
         datatype:"JSON",
         contentType:"application/json",
@@ -86,7 +86,7 @@ function deleteCategoria(idBotonBorrar){
             id:idBotonBorrar
         };
         $.ajax({
-            url:"http://localhost:8080/api/Category/"+idBotonBorrar,
+            url:"http://150.136.121.67:8080/api/Category/"+idBotonBorrar,
             type:"DELETE",
             datatype:"JSON",
             contentType:"application/JSON",

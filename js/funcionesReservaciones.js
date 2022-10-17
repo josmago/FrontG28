@@ -2,7 +2,7 @@
 
 function getReservaciones() {
     $.ajax({
-        url: "http://localhost:8080/api/Reservation/all",
+        url: "http://150.136.121.67:8080/api/Reservation/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -41,7 +41,7 @@ function postReservaciones() {
         };
         console.log(cajas);
         $.ajax({
-            url: "http://localhost:8080/api/Reservation/save",
+            url: "http://150.136.121.67:8080/api/Reservation/save",
             type: "POST",
             datatype: "JSON",
             contentType: "application/json; charset=utf-8",
@@ -74,7 +74,7 @@ function putReservaciones(idBotonActualizar) {
             client: { idClient: +$("#select-client").val() }
         };
         $.ajax({
-            url: "http://localhost:8080/api/Reservation/update",
+            url: "http://150.136.121.67:8080/api/Reservation/update",
             type: "PUT",
             datatype: "JSON",
             contentType: "application/json",
@@ -90,7 +90,7 @@ function deleteReservaciones() { }
 
 function getCliente_Reservaciones() {
     $.ajax({
-        url: "http://localhost:8080/api/Client/all",
+        url: "http://150.136.121.67:8080/api/Client/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -107,7 +107,7 @@ function getCliente_Reservaciones() {
 
 function getRoom_Reservaciones() {
     $.ajax({
-        url: "http://localhost:8080/api/Room/all",
+        url: "http://150.136.121.67:8080/api/Room/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {

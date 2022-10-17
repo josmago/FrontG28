@@ -1,6 +1,6 @@
 function getStatus(){
 $.ajax({
-    url:"http://localhost:8080/api/Reservation/report-status",
+    url:"http://150.136.121.67:8080/api/Reservation/report-status",
     type:"GET",
     datatype:"JSON",
     success:function(respuesta){

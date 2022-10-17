@@ -1,7 +1,7 @@
 //GET,POST,PUT,DELETE
 function getRoom() {
     $.ajax({
-        url: "http://localhost:8080/api/Room/all",
+        url: "http://150.136.121.67:8080/api/Room/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
@@ -31,7 +31,7 @@ function postRoom() {
         };
         
         $.ajax({
-            url:"http://localhost:8080/api/Room/save",
+            url:"http://150.136.121.67:8080/api/Room/save",
             type:"POST",
             datatype:"JSON",
             contentType:"application/json; charset=utf-8",
@@ -60,7 +60,7 @@ function putRoom(idBotonActualizar) {
             category:{id: + $("#select-category").val()}
         };
         $.ajax({
-            url: "http://localhost:8080/api/Room/update",
+            url: "http://150.136.121.67:8080/api/Room/update",
             type: "PUT",
             datatype: "JSON",
             contentType: "application/json",
@@ -100,7 +100,7 @@ function deleteRoom(idBotonBorrar) {
                 id: idBotonBorrar
             };
             $.ajax({
-                url: "http://localhost:8080/api/Room/" + idBotonBorrar,
+                url: "http://150.136.121.67:8080/api/Room/" + idBotonBorrar,
                 type: "DELETE",
                 datatype: "JSON",
                 contentType: "application/JSON",
@@ -162,7 +162,7 @@ function pintarRoom(respuesta) {
 //////////////Get category////////
 function getRoom_Category() {
     $.ajax({
-        url: "http://localhost:8080/api/Category/all",
+        url: "http://150.136.121.67:8080/api/Category/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {
